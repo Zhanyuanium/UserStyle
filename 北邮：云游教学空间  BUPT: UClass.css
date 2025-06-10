@@ -1,0 +1,286 @@
+@-moz-document domain("ucloud.bupt.edu.cn") {
+:root {
+    --dd-bg-dark-solid: color-mix(in oklab, var(--darkreader-background-efefef) 90%, transparent);
+    --dd-fg-dark-translucent: color-mix(in oklab, var(--darkreader-background-151515) 25%, transparent);
+    --dd-fg-margin: 4px;
+    --bg-dark-translucent: color-mix(in oklab, var(--darkreader-background-f5f6fa) 25%, transparent);
+    --bg-darker-translucent: color-mix(in oklab, var(--darkreader-background-fafafb) 50%, transparent);
+    --round: 10px;
+    --roundess: 6px;
+}
+
+/* 加载界面 */
+.el-loading-mask {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+
+/* 背景 */
+.main-content .router-container {
+    background-color: transparent !important;
+}
+.layout-container {
+    background-color: transparent !important;
+}
+.layout-header-container .course-nav {
+    background: inherit !important;
+}
+
+/* 下拉菜单 */
+.el-select-dropdown {
+    background-color: var(--dd-bg-dark-solid);
+    backdrop-filter: blur(10px);
+    border-radius: var(--round);
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item {
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: var(--dd-fg-dark-translucent);
+}
+.el-dropdown-menu {
+    background-color: var(--dd-bg-dark-solid);
+    backdrop-filter: blur(10px);
+    border-radius: var(--round);
+}
+.dropdown-info[data-v-74c7027a] .el-dropdown-menu__item{
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.dropdown-info[data-v-74c7027a] .el-dropdown-menu__item:hover {
+    background-color: var(--dd-fg-dark-translucent);
+}
+.el-popover {
+    background-color: var(--dd-bg-dark-solid);
+    backdrop-filter: blur(10px);
+    border-radius: var(--round);
+}
+
+/* 侧边栏 */
+.main-content .router-container .menu-nav .el-menu  {
+    border-radius: var(--round);
+}
+.el-menu, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+    background-color: var(--bg-dark-translucent);
+}
+.main-content .router-container .menu-nav .el-menu-item {
+    border-radius: var(--roundess);
+    margin: 4px;
+}
+.main-content .router-container .menu-nav .el-menu-item:hover {
+    background: none;
+    background-color: var(--bg-dark-translucent);
+}
+
+/* 主页 */
+.teacher-home-page .home-card[data-v-3d643a3e] {
+	background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+.teacher-home-page .home-left-container .my-lesson-section .my-lesson-header .header-control .banner-control-btn[data-v-3d643a3e] {
+    background-color: var(--bg-dark-translucent);
+}
+.teacher-home-page .home-left-container .in-progress-section .in-progress-header .header-control .banner-control-btn[data-v-3d643a3e] {
+    background-color: var(--bg-dark-translucent);
+}
+.teacher-home-page .home-left-container .my-lesson-section .my-lesson-body .my-lesson-banner .my-lesson-group .my-lesson-item[data-v-3d643a3e] {
+    border-radius: var(--roundess);
+}
+.teacher-home-page .home-left-container .my-lesson-section .my-lesson-body .my-lesson-banner .my-lesson-group .my-lesson-item[data-v-3d643a3e]:hover {
+    border-radius: var(--roundess);
+}
+.teacher-home-page .home-left-container .in-progress-section .in-progress-body .in-progress-item[data-v-3d643a3e] {
+    border-radius: var(--roundess);
+}
+
+/* 我的课堂 */
+.my-course-page[data-v-a60a5464] {
+   	background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+    background-color: var(--bg-dark-translucent);
+}
+.my-course-page .course-wrap .course-list .course-item[data-v-a60a5464]:hover {
+    border-radius: var(--roundess)
+}
+
+/* 我的问卷 */
+.teacher-survey-page[data-v-331da809] {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+    margin-left: 16px;
+}
+
+/* 我的笔记 */
+.my-notes-container[data-v-4f30ffa4] {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+.my-notes-container .content .notes-content .notes-top[data-v-4f30ffa4] {
+    border-bottom: none;
+}
+.my-notes-container .content .preview-content .preview-top[data-v-4f30ffa4] {
+    border-bottom: none;
+}
+
+/* 信息员 */
+.my-task-page[data-v-1773bc71] {
+    padding: 0px;
+    margin-left: 16px;
+}
+.my-task-page .page-container[data-v-1773bc71] {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+
+
+/* 标签栏 */
+.layout-header-container .course-nav .box .nav-bottom[data-v-6e51ce82] {
+	background: var(--bg-darker-translucent);
+	border-radius: var(--round);
+}
+.course-home-page-container .el-collapse-item__header {
+    background-color: var(--bg-dark-translucent);
+}
+.el-collapse-item__wrap {
+    background-color: var(--bg-dark-translucent);
+}
+
+
+/* 课程主页 */
+.course-home-page-container .content .course-content .chapter .chapter-item[data-v-6e1c61bd] {
+    border-radius: var(--round)
+}
+.course-home-page-container .content .course-content .chapter .chapter-item .chapter-item-resource .resource-item[data-v-6e1c61bd] {
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.course-home-page-container .content .course-content .chapter .chapter-item .chapter-item-resource .resource-item[data-v-6e1c61bd]:hover {
+    background-color: var(--bg-dark-translucent);
+}
+.course-home-page-container .branch .el-collapse-item__header {
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.course-home-page-container .branch .el-collapse-item__header:hover {
+    background-color: var(--bg-dark-translucent);
+}
+.course-home-page-container .content .course-content .chapter .chapter-item .branch .branch-item .branch-item-content[data-v-6e1c61bd] {
+    border-left: none;
+}
+.course-home-page-container .content .course-content .chapter .chapter-item .branch .branch-item .branch-item-content .branch-item-resource .resource-item[data-v-6e1c61bd]:hover {
+	background-color: var(--bg-dark-translucent);
+    border-radius: var(--roundess);
+}
+
+/* 课程作业 */
+.el-table tr {
+    background-color: var(--bg-dark-translucent);
+}
+#student-assignment-list .assignment-table[data-v-b1ebf9fa] .table-header {
+    background-color: transparent;
+}
+.el-table__body tr.hover-row.current-row > td.el-table__cell, .el-table__body tr.hover-row.el-table__row--striped.current-row > td.el-table__cell, .el-table__body tr.hover-row.el-table__row--striped > td.el-table__cell, .el-table__body tr.hover-row > td.el-table__cell {
+    background-color: var(--bg-dark-translucent);
+}
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+    border: none;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev {
+    background-color: var(--bg-dark-translucent) !important;
+}
+.el-pagination .el-pager .number {
+    background-color: var(--bg-dark-translucent) !important;
+}
+.el-cascader__dropdown {
+    background-color: var(--dd-bg-dark-solid);
+    backdrop-filter: blur(10px);
+    border-radius: var(--round);
+}
+.el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled) {
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover {
+    background-color: var(--dd-fg-dark-translucent);
+}
+.el-table-filter {
+    background-color: var(--dd-bg-dark-solid);
+    backdrop-filter: blur(10px);
+    border-radius: var(--round);
+}
+.el-table-filter__list-item {
+    border-radius: var(--roundess);
+    margin: var(--dd-fg-margin);
+}
+.el-table-filter__list-item:hover {
+    background-color: var(--dd-fg-dark-translucent);
+}
+
+/* 作业详情 */
+#assignment-details .details-tabs[data-v-3e0997ba] .el-tabs--card > .el-tabs__header {
+    background: color-mix(in oklab, var(--darkreader-background-fafafb) 50%, transparent);
+	border-radius: var(--round);
+}
+#assignment-details .details-tabs[data-v-3e0997ba] .el-tabs__item {
+    background-color: transparent;
+}
+
+
+/* 作业信息 */
+#assignment-info[data-v-1f2e23cd] {
+    background-color: var(--bg-dark-translucent);
+}
+.resource-list .resource-detail[data-v-452d9c6e] {
+    background-color: var(--bg-dark-translucent);
+}
+
+/* 我的作业 */
+#my-assignment .submitAssignmentForm[data-v-4a625684] {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+.el-textarea.is-disabled .el-textarea__inner {
+    background-color: var(--bg-dark-translucent);
+}
+
+/* 优秀作业 */
+.el-table, .el-table__expanded-cell {
+    background-color: var(--bg-dark-translucent);
+}
+#excellent-list .excellent-list-table[data-v-ffe08e38] .table-header {
+    background-color: transparent;
+}
+
+/* 测试 */
+.testing-details-content .box[data-v-4cfb7784] {
+    background-color: var(--bg-dark-translucent);
+}
+.answer {
+    background: inherit !important;
+}
+
+/* 笔记按钮 */
+.add-notes {
+    display: none;
+}
+
+/* 消息通知 */
+.setNotice .setNotice-body .tableBox[data-v-62d6a7b5] {
+    background-color: var(--bg-dark-translucent);
+    border-radius: var(--round);
+}
+.setNotice .setNotice-body .tableBox li[data-v-62d6a7b5] {
+    border-bottom: none;
+}
+
+/* 底栏 */
+.layout-footer-content {
+    background: inherit !important;
+}
+.layout-footer-content > div:nth-child(1) {
+    background: inherit !important;
+}
+}
